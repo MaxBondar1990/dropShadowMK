@@ -1,0 +1,15 @@
+//обнуляємо стилі браузеру
+@import "_null";
+
+//Підключаю шрифти з файлу 'dist/fonts.scss'
+@import "fonts";
+
+body {
+   font-family: Montserrat;
+   font-size: 14px;
+   // background-color: #000;
+
+}
+
+//Підключаємо стилі сторніки сайту
+@import "_roznica";

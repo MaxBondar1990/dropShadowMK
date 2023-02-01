@@ -3,7 +3,65 @@
       <h2>Футболка чоловіча, чорна
          з принтом “VOLYA”
       </h2>
-      <div class="size">
+      <div class="size _visible" data-name="man">
+         <p>Оберіть розмір</p>
+         <div class="size__input-size">
+            <input id="s" type="radio" name="size">
+            <label for="s">
+               <p>S</p>
+            </label>
+            <input id="m" type="radio" name="size">
+            <label for="m">
+               <p>M</p>
+            </label>
+            <input id="l" type="radio" name="size" checked>
+            <label for="l">
+               <p>L</p>
+            </label>
+            <input id="xl" type="radio" name="size">
+            <label for="xl">
+               <p>XL</p>
+            </label>
+            <input id="xxl" type="radio" name="size">
+            <label for="xxl">
+               <p>XXL</p>
+            </label>
+            <input id="xxxl" type="radio" name="size">
+            <label for="xxxl">
+               <p>XXXL</p>
+            </label>
+         </div>
+      </div>
+      <div class="size" data-name="woman">
+         <p>Оберіть розмір</p>
+         <div class="size__input-size">
+            <input id="s" type="radio" name="size">
+            <label for="s">
+               <p>S</p>
+            </label>
+            <input id="m" type="radio" name="size">
+            <label for="m">
+               <p>M</p>
+            </label>
+            <input id="l" type="radio" name="size" checked>
+            <label for="l">
+               <p>L</p>
+            </label>
+            <input id="xl" type="radio" name="size">
+            <label for="xl">
+               <p>XL</p>
+            </label>
+            <input id="xxl" type="radio" name="size">
+            <label for="xxl">
+               <p>XXL</p>
+            </label>
+            <input id="xxxl" type="radio" name="size">
+            <label for="xxxl">
+               <p>XXXL</p>
+            </label>
+         </div>
+      </div>
+      <div class="size" data-name="child">
          <p>Оберіть розмір</p>
          <div class="size__input-size">
             <input id="s" type="radio" name="size">
@@ -50,7 +108,7 @@
          <button class="submit" type="submit">ОФОРМИТИ</button>
       </div>
    </div>
-   <!-- <div class="catalog-prints preview__catalog-prints">
+   <div class="catalog-prints preview__catalog-prints">
       <div class="tile catalog-prints__tile">
          <button class="tile__item _selected" type="button">
             <img src="@img/print.png" alt="print">
@@ -80,7 +138,7 @@
       <div class="catalog-prints__exit exit">
          <button class="exit-button" type="button"></button>
       </div>
-   </div> -->
+   </div>
    <div class="preview__header header">
       <div class="header__logo">
          <a href="/" title="на головну">
@@ -161,8 +219,6 @@
             </svg>
          </a>
       </div>
-      <div class="comunication__buy">
-         <button>ЗАМОВИТИ</button>
-      </div>
+      <button class="comunication__buy" type="button">ЗАМОВИТИ</button>
    </div>
 </div>

@@ -9,6 +9,10 @@ flsFunctions.isWebp();
 
 
 roznica.viewSettings();
+roznica.getOrderForm();
+roznica.getPrints();
+roznica.setPrint();
+
 // core version + navigation, pagination modules:
 //!  import Swiper, { Navigation, Pagination } from 'swiper';
 //! const swiper = new Swiper(...);

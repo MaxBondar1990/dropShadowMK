@@ -349,11 +349,13 @@ $animateTime: .3s;
       object-fit: contain;
    }
    &__print {
+      width: 100%;
+      max-height: 96vh;
+      object-fit: contain;
       position: absolute;
       top: 0;
       left: 50%;
       transform: translate(-50%);
-      width: 100%;
    }
    
 }

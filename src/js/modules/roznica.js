@@ -71,8 +71,33 @@ export function setPrint() {
 
    function set(event) {
       if (event.target.closest('.tile__item')) {
-         const maketSrc = event.target.getAttribute('src');
+         const maketSrc = event.target.dataset.maket;
          maketDesignePrint.setAttribute('src', maketSrc);
+         if (document.querySelector('.preview__catalog-prints').classList.contains('_visible')) {
+            document.querySelector('.preview__catalog-prints').classList.remove('_visible');
+         }
+      }
+   }
+}
+
+//Встановити налаштування кольору, розміщення та моделі
+export function setChengingSettings() {
+   const imageTovar = document.querySelector('.designe__maket img');
+
+   document.addEventListener('click', setColor);
+
+   function setColor(event) {
+      if (
+         event.target.closest('.settings__color input[name=color]')
+         || event.target.closest('.settings__front-back  input[name=front-back]')
+         || event.target.closest('.settings__model input[name=model]')
+      ) {
+         const color = document.querySelector('.settings__color input[name=color]:checked').id;
+         const place = document.querySelector('.settings__front-back input[name=front-back]:checked').id;
+         const model = document.querySelector('.settings__model input[name=model]:checked').id;
+         const fileName = `img/T-shirts/${model + place + color}.png`;
+         imageTovar.setAttribute('src', fileName)
+         //console.log(fileName);
 
       }
    }

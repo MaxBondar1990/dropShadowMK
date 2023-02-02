@@ -331,7 +331,7 @@ $animateTime: .3s;
 .designe {
    width: 95%;
    @media (orientation: landscape){
-      width: 40%;
+      width: 55%;
    }
    @media (min-width: 1179px) and (orientation: landscape){
       width: 50%;
@@ -350,10 +350,10 @@ $animateTime: .3s;
    }
    &__print {
       position: absolute;
-      top: 17%;
+      top: 0;
       left: 50%;
       transform: translate(-50%);
-      width: 39%;
+      width: 100%;
    }
    
 }

@@ -64,15 +64,25 @@ export function getPrints() {
 
 // Вибраний принт розташувати на макеті дизайну товару
 export function setPrint() {
+   //Отримую принт з превью товара
+   const print = document.querySelector('.designe__print');
+   //Зображення на кнопці каталогу принтів
+   const maketsBtn = document.querySelector('.selected-print .selected-print__item img');
 
-   const maketDesignePrint = document.querySelector('.designe__print');
-
+   //Додаємо прослуховувача подій
    document.addEventListener('click', set);
-
+   //встановлюю принт на макет товару
    function set(event) {
       if (event.target.closest('.tile__item')) {
-         const maketSrc = event.target.dataset.maket;
-         maketDesignePrint.setAttribute('src', maketSrc);
+         //Отримую шлях до макету з дата-елементу кнопки
+         const maketDataset = event.target.dataset.maket;
+         const maketSrc = event.target.getAttribute('src');
+         console.log(maketSrc);
+         //Встановлюю новий шлях в зображенні принта товара
+         print.setAttribute('src', maketDataset);
+         //Встановлюю новий шлях в зображенні кнопки каталогу принтів
+         maketsBtn.setAttribute('src', maketSrc);
+         //Приховую меню макетів принтів
          if (document.querySelector('.preview__catalog-prints').classList.contains('_visible')) {
             document.querySelector('.preview__catalog-prints').classList.remove('_visible');
          }
@@ -84,7 +94,6 @@ export function setPrint() {
 export function setChengingSettings() {
    //Створюємо константу зображення товару, що буде змінюватися
    const imageTovar = document.querySelector('.designe__t-shirt');
-
    //додаємо нову подію на клік
    document.addEventListener('click', setSettings);
    // встановлюємо нове зображення по кліку на чекбокси в налаштуваннях
@@ -100,13 +109,20 @@ export function setChengingSettings() {
          const fileName = `img/T-shirts/${model + place + color}.png`;
          imageTovar.setAttribute('src', fileName)
       }
-      //
+      //Показую обрану розмірну сітку в формі замовлення.
       if (event.target.closest('.settings__model input[name=model]')) {
+         //Отримую імʼя моделі
          const modelName = event.target.id;
-         //const size = document.querySelector('.order [data-name=`${modelName}`]');
-         const size = document.querySelector(`[data-name="${modelName}"]`);
-         console.log(size)
-
+         //отримую всі розміри
+         document.querySelectorAll('.order .size').forEach((size) => {
+            //Видаляю класс _vizible
+            if (size.classList.contains('_visible')) {
+               size.classList.remove('_visible');
+            }
+         })
+         //Встановлюю класс _visible обраній сітці розміру в залежності від моделі
+         const size = document.querySelector(`.order [data-name="${modelName}"]`);
+         size.classList.add('_visible')
       }
    }
 }

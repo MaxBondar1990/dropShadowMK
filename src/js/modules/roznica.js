@@ -10,6 +10,11 @@ export function viewSettings() {
       if (event.target.closest('.gear')) {
          settingsMenu.classList.add('_action');
          settingsBtn.classList.add('_action');
+         return;
+      }
+      if (event.target.closest('body') && !event.target.closest('.settings')) {
+         settingsMenu.classList.remove('_action')
+         settingsBtn.classList.remove('_action');
       }
    }
 
@@ -18,6 +23,7 @@ export function viewSettings() {
          settingsMenu.classList.remove('_action');
          settingsBtn.classList.remove('_action');
       }
+
    }
 }
 
@@ -123,6 +129,33 @@ export function setChengingSettings() {
          //Встановлюю класс _visible обраній сітці розміру в залежності від моделі
          const size = document.querySelector(`.order [data-name="${modelName}"]`);
          size.classList.add('_visible')
+      }
+   }
+}
+
+export function viewPhoneNomber() {
+   document.addEventListener('click', view);
+
+   function view(event) {
+      if (event.target.closest('.comunication__messengers [type="button"]')) {
+         //Показуєм телефон
+         if (document.querySelector('.phone-namber').classList.contains('_passive')) {
+            document.querySelector('.phone-namber').classList.remove('_passive');
+            document.querySelector('.phone-namber').classList.add('_active');
+            return;
+         }
+         //Приховуєм телефон
+         if (document.querySelector('.phone-namber').classList.contains('_active')) {
+            document.querySelector('.phone-namber').classList.remove('_active')
+            document.querySelector('.phone-namber').classList.add('_passive')
+            return;
+         }
+      }
+      //Приховуєм телефон
+      if (event.target.closest('body') && !event.target.closest('.phone-namber')) {
+         document.querySelector('.phone-namber').classList.remove('_active')
+         document.querySelector('.phone-namber').classList.add('_passive')
+         return;
       }
    }
 }

@@ -13,6 +13,7 @@ roznica.getOrderForm();
 roznica.getPrints();
 roznica.setPrint();
 roznica.setChengingSettings();
+roznica.viewPhoneNomber();
 
 // core version + navigation, pagination modules:
 //!  import Swiper, { Navigation, Pagination } from 'swiper';

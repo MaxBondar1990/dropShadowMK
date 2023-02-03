@@ -82,11 +82,13 @@ export function setPrint() {
 
 //Встановити налаштування кольору, розміщення та моделі
 export function setChengingSettings() {
-   const imageTovar = document.querySelector('.designe__maket img');
+   //Створюємо константу зображення товару, що буде змінюватися
+   const imageTovar = document.querySelector('.designe__t-shirt');
 
-   document.addEventListener('click', setColor);
-
-   function setColor(event) {
+   //додаємо нову подію на клік
+   document.addEventListener('click', setSettings);
+   // встановлюємо нове зображення по кліку на чекбокси в налаштуваннях
+   function setSettings(event) {
       if (
          event.target.closest('.settings__color input[name=color]')
          || event.target.closest('.settings__front-back  input[name=front-back]')
@@ -97,7 +99,13 @@ export function setChengingSettings() {
          const model = document.querySelector('.settings__model input[name=model]:checked').id;
          const fileName = `img/T-shirts/${model + place + color}.png`;
          imageTovar.setAttribute('src', fileName)
-         //console.log(fileName);
+      }
+      //
+      if (event.target.closest('.settings__model input[name=model]')) {
+         const modelName = event.target.id;
+         //const size = document.querySelector('.order [data-name=`${modelName}`]');
+         const size = document.querySelector(`[data-name="${modelName}"]`);
+         console.log(size)
 
       }
    }

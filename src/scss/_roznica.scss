@@ -393,7 +393,6 @@ $animateTime: .3s;
 
    gap: 8px;
    padding: 12px;
-   // margin:0 0 60px 0;
 
    background: rgba(39, 75, 116, 0.5);
    border: 1px solid #FFFFFF;
@@ -403,6 +402,8 @@ $animateTime: .3s;
    backdrop-filter: blur(40px);
 
    transition: all $animateTime;
+
+   z-index: 1;
    &._action {
       right: 50%;
       transform: translateX(50%);
@@ -774,20 +775,35 @@ $animateTime: .3s;
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 16px;
       @media (orientation: landscape) {
          justify-content: flex-start;
       }
-      svg{
+      a{
+         display: flex;
          width: 34px;
          height: 34px;
-         margin: 0 15px;
-         @media (min-width: 900px){
-            width: 42px;
-            height: 42px;
+         svg{
+            width: 34px;
+            height: 34px;
+            @media (min-width: 900px){
+               width: 42px;
+               height: 42px;
+            }
          }
       }
       button{
+         width: 34px;
+         height: 34px;
          background: transparent;
+         svg{
+            width: 34px;
+            height: 34px;
+            @media (min-width: 900px){
+               width: 42px;
+               height: 42px;
+            }
+         }
       }
       .phone-namber{
          position: absolute;
@@ -814,8 +830,6 @@ $animateTime: .3s;
          
          -webkit-backdrop-filter: blur(40px);
          backdrop-filter: blur(40px);
-
-         z-index: 10;
 
          &._active{
             animation: namberActive .7s;

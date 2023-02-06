@@ -1,13 +1,13 @@
 // Показати модалку з налаштуваннями, чекбоксами вибору.
 export function viewSettings() {
-   const settingsBtn = document.querySelector('.gear');
+   const settingsBtn = document.querySelector('.settings-btn');
    const settingsMenu = document.querySelector('.settings');
 
    document.addEventListener('click', viewSettings);
    document.addEventListener('click', closeSettings);
 
    function viewSettings(event) {
-      if (event.target.closest('.gear')) {
+      if (event.target.closest('.settings-btn')) {
          settingsMenu.classList.add('_action');
          settingsBtn.classList.add('_action');
          return;
@@ -41,7 +41,7 @@ export function getOrderForm() {
       }
    }
    function close(event) {
-      if (event.target.closest('.exit-button')) {
+      if (event.target.closest('.close')) {
          orderForm.classList.remove('_visible');
       }
    }
@@ -50,19 +50,19 @@ export function getOrderForm() {
 
 // Відкрити модалку з макетами принтів
 export function getPrints() {
-   const catalogPrints = document.querySelector('.preview__catalog-prints');
+   const catalogPrints = document.querySelector('.landing-roznica__catalog-prints');
 
    document.addEventListener('click', view);
    document.addEventListener('click', close);
 
    function view(event) {
-      if (event.target.closest('.selected-print')) {
+      if (event.target.closest('.catalog-prints-btn')) {
          catalogPrints.classList.add('_visible');
       }
    }
 
    function close(event) {
-      if (event.target.closest('.exit-button')) {
+      if (event.target.closest('.close')) {
          catalogPrints.classList.remove('_visible');
       }
    }
@@ -73,7 +73,7 @@ export function setPrint() {
    //Отримую принт з превью товара
    const print = document.querySelector('.designe__print');
    //Зображення на кнопці каталогу принтів
-   const maketsBtn = document.querySelector('.selected-print .selected-print__item img');
+   const maketsBtn = document.querySelector('.catalog-prints-btn .catalog-prints-btn__item img');
 
    //Додаємо прослуховувача подій
    document.addEventListener('click', set);
@@ -83,14 +83,13 @@ export function setPrint() {
          //Отримую шлях до макету з дата-елементу кнопки
          const maketDataset = event.target.dataset.maket;
          const maketSrc = event.target.getAttribute('src');
-         console.log(maketSrc);
          //Встановлюю новий шлях в зображенні принта товара
          print.setAttribute('src', maketDataset);
          //Встановлюю новий шлях в зображенні кнопки каталогу принтів
          maketsBtn.setAttribute('src', maketSrc);
          //Приховую меню макетів принтів
-         if (document.querySelector('.preview__catalog-prints').classList.contains('_visible')) {
-            document.querySelector('.preview__catalog-prints').classList.remove('_visible');
+         if (document.querySelector('.landing-roznica__catalog-prints').classList.contains('_visible')) {
+            document.querySelector('.landing-roznica__catalog-prints').classList.remove('_visible');
          }
       }
    }
@@ -159,3 +158,5 @@ export function viewPhoneNomber() {
       }
    }
 }
+
+//todo add _selected to .tile__item

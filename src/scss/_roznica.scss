@@ -818,8 +818,9 @@ $animateTime: .3s;
             left: 50%;
             transform: translate(-50%, -28px);
 
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
+            white-space: nowrap;
          }
       }
       input:checked + label{

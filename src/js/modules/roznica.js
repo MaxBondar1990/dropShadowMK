@@ -111,7 +111,7 @@ export function setChengingSettings() {
          const color = document.querySelector('.settings__color input[name=color]:checked').id;
          const place = document.querySelector('.settings__front-back input[name=front-back]:checked').id;
          const model = document.querySelector('.settings__model input[name=model]:checked').id;
-         const fileName = `img/T-shirts/${model + place + color}.png`;
+         const fileName = `img/landing-roznica-t-shirt/T-shirts/${model + place + color}.png`;
          imageTovar.setAttribute('src', fileName)
       }
       //Показую обрану розмірну сітку в формі замовлення.

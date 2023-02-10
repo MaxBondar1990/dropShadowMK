@@ -106,18 +106,22 @@ $animateTime: .3s;
       width: 100%;
    }
    &__t-shirt {
-      width: 100%;
-      max-height: 96vh;
-      object-fit: contain;
+      img{
+         width: 100%;
+         max-height: 96vh;
+         object-fit: contain;
+      }
    }
    &__print {
-      width: 100%;
-      max-height: 96vh;
-      object-fit: contain;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%);
+      img{
+         width: 100%;
+         max-height: 96vh;
+         object-fit: contain;
+         position: absolute;
+         top: 0;
+         left: 50%;
+         transform: translate(-50%);
+      }
    }
 }
 .settings-btn{
@@ -189,8 +193,10 @@ $animateTime: .3s;
             height: 148px;
          }
       }
-      img {
-         width: 88%;
+      picture{
+         img {
+            width: 88%;
+         }
       }
    }
    @media (orientation: portrait) and (min-width: 280px){
@@ -286,8 +292,10 @@ $animateTime: .3s;
       box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.25);
       -webkit-backdrop-filter: blur(40px);
       backdrop-filter: blur(40px);
-      img{
-         width: 88%;
+      picture{
+         img{
+            width: 88%;
+         }
       }
       &._selected{
       border: 5px solid #E963FD;
@@ -845,18 +853,6 @@ $animateTime: .3s;
    font-size: 18px;
    font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .landing-roznica{
    width: 100vw;
    min-height: 100vh;

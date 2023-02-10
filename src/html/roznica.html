@@ -15,8 +15,14 @@
    <main class="landing-roznica__main">
       <div class="designe landing-roznica__designe">
          <div class="designe__maket">
-            <img class="designe__t-shirt" src="@img/landing-roznica-t-shirt/t-shirts/mensFrontWht.png" alt="Патріотична футболка">
-            <img class="designe__print" src="@img/landing-roznica-t-shirt/prints/preview_im-ukrainian_blck.png" alt="макет Я Українець">
+            <picture class="designe__t-shirt">
+               <source srcset="@img/landing-roznica-t-shirt/t-shirts/mensFrontWht.webp" type="image/webp">
+            <img src="@img/landing-roznica-t-shirt/t-shirts/mensFrontWht.png" alt="Патріотична футболка">
+            </picture>
+            <picture class="designe__print">
+               <source srcset="@img/landing-roznica-t-shirt/prints/preview_im-ukrainian_blck.webp" type="image/webp">
+            <img src="@img/landing-roznica-t-shirt/prints/preview_im-ukrainian_blck.png" alt="макет Я Українець">
+            </picture>
          </div>
       </div>
       <button type="button" class="settings-btn landing-roznica__settings-btn">
@@ -28,98 +34,145 @@
          <div class="catalog-prints-btn__item"></div>
          <div class="catalog-prints-btn__item"></div>
          <div class="catalog-prints-btn__item">
+            <picture>
+               <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_im-ukrainian_blck.webp" type="image/webp">
             <img src="@img/landing-roznica-t-shirt/prints-btn/print_im-ukrainian_blck.png" alt="img">
+            </picture>
          </div>
       </button>
       <div class="catalog-prints landing-roznica__catalog-prints">
          <div class="tile catalog-prints__tile">
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_ikhrest-vsu_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_ikhrest-vsu_wht.png">
+               <picture data-maket="/preview_ikhrest-vsu_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_ikhrest-vsu_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_ikhrest-vsu_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item _selected" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_im-ukrainian_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_im-ukrainian_blck.png">
+               <picture data-maket="/preview_im-ukrainian_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_im-ukrainian_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_im-ukrainian_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_im-ukrainian_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_im-ukrainian_wht.png">
+               <picture data-maket="/preview_im-ukrainian_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_im-ukrainian_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_im-ukrainian_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_khrest-vsu_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_khrest-vsu_blck.png">
+               <picture data-maket="/preview_khrest-vsu_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_khrest-vsu_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_khrest-vsu_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_never-give-up_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_never-give-up_blck.png">
+               <picture data-maket="/preview_never-give-up_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_never-give-up_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_never-give-up_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_never-give-up_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_never-give-up_wht.png">
+               <picture data-maket="/preview_never-give-up_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_never-give-up_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_never-give-up_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_peace-for-ukraine_clr.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_peace-for-ukraine_clr.png">
+               <picture data-maket="/preview_peace-for-ukraine_clr">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_peace-for-ukraine_clr.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_peace-for-ukraine_clr.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub1_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub1_blck.png">
+               <picture data-maket="/preview_trizub1_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub1_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub1_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub1_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub1_wht.png">
+               <picture data-maket="/preview_trizub1_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub1_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub1_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub2_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub2_blck.png">
+               <picture data-maket="/preview_trizub2_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub2_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub2_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub2_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub2_wht.png">
+               <picture data-maket="/preview_trizub2_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub2_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub2_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub4_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub4_blck.png">
+               <picture data-maket="/preview_trizub4_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub4_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub4_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub4_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub4_wht.png">
+               <picture data-maket="preview_trizub4_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub4_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub4_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub-volya_blck.png">
+               <picture data-maket="preview_trizub-volya_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub-volya_wht.png">
+               <picture data-maket="preview_trizub-volya_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya2_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub-volya2_blck.png">
+               <picture data-maket="preview_trizub-volya2_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya2_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya2_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya2_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub-volya2_wht.png">
+               <picture data-maket="preview_trizub-volya2_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya2_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya2_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya3_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub-volya3_blck.png">
+               <picture data-maket="preview_trizub-volya3_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya3_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya3_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya3_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub-volya3_wht.png">
+               <picture data-maket="preview_trizub-volya3_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya3_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya3_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya4_blck.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub-volya4_blck.png">
+               <picture data-maket="preview_trizub-volya4_blck">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya4_blck.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya4_blck.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya4_wht.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_trizub-volya4_wht.png">
+               <picture data-maket="preview_trizub-volya4_wht">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya4_wht.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_trizub-volya4_wht.png" alt="print">
+               </picture>
             </button>
             <button class="tile__item" type="button">
-               <img src="@img/landing-roznica-t-shirt/prints-btn/print_ukraine_heart1.png" alt="print"
-                  data-maket="img/landing-roznica-t-shirt/prints/preview_ukraine_heart1.png">
+               <picture data-maket="preview_ukraine_heart1">
+                  <source srcset="@img/landing-roznica-t-shirt/prints-btn/print_ukraine_heart1.webp" type="image/webp">
+                  <img src="@img/landing-roznica-t-shirt/prints-btn/print_ukraine_heart1.png" alt="print">
+               </picture>
             </button>
          </div>
          <div class="bottom-bar catalog-prints__bottom-bar">

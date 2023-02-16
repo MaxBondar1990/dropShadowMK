@@ -8,7 +8,7 @@ $colorBlackTrans25: rgba(0, 0, 0, 0.25);
 $colorBlue: #274B74;
 $colorBlueTrans20: rgba(39, 75, 116, 0.2);
 // lur----------------------------
-$blur: blur (40px);
+$blur: blur(40px);
 
 // Box-shadow----------------------
 $box-shadowDark: 0px 4px 4px $colorBlackTrans25;
@@ -87,7 +87,7 @@ $borderWight_1px: 1px solid $colorWight;
          font-weight: 700;
          font-size: 30px;
          line-height: 37px;
-         color: $color;
+         color: $colorViolet;
          @media (min-width: 900px){
             font-size: 96px;
             line-height: 117px;
